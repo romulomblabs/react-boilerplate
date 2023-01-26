@@ -1,0 +1,23 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        {
+            "targets": {
+                "browsers": [
+                    "last 2 versions",
+                    "not ie <= 11"
+                ]
+            }
+        }
+    ],
+    "plugins": [
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "libraryDirectory": "es",
+                "style": "css"
+            }
+        ]
+    ]
+}

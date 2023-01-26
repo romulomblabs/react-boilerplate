@@ -1,7 +1,9 @@
-import React from "react";
+import { AdvancedButton } from "./components";
+
+import "antd/dist/reset.css";
 
 function App() {
-  return <p>Dashboard</p>;
+  return <AdvancedButton />;
 }
 
 export default App;

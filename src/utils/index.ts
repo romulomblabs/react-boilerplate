@@ -1,4 +1,3 @@
-export { default as alphabet } from "./alphabet";
 export { getInstance } from "./api";
 export { default as checkPasswordQuality } from "./checkPasswordQuality";
 export * from "./format";
