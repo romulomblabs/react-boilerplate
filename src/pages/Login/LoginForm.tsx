@@ -26,14 +26,14 @@ const Login: React.FC = () => {
 
   return (
     <Row className={styles.login}>
-      <Col span={12} className={styles.contentLeft}>
+      <Col sm={24} md={12} className={styles.contentLeft}>
         <div className="center-content">
           <Image src="path/to/logo.png" alt="Company Logo" />
           <Title level={4}>Welcome to our App</Title>
           <Title level={5}>Please log in to continue</Title>
         </div>
       </Col>
-      <Col span={12} className={styles.content}>
+      <Col sm={24} md={12} className={styles.content}>
         <Form onFinish={handleSubmit(submitForm)}>
           <Form.Item label="Email">
             <input
