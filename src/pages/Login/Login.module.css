@@ -1,0 +1,15 @@
+.login {
+  height: 100vh;
+}
+.contentLeft,
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentLeft {
+  background: linear-gradient(164deg, #0075aa, #0095c0);
+}

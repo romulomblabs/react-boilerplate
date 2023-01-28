@@ -2,17 +2,17 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import NotFound from "src/pages/Error/not-found/NotFound";
 import LayoutPage from "src/pages/Layout";
-import Login from "src/pages/Login/Login";
+import Login from "src/pages/Login/LoginForm";
 
 import routeList from "./routeList";
 
 function Router() {
   // const state: any = useSelector((state) => state);
-  // const state = { user: { token: "213213123231", userInfo: { role: "token" } } };
   // const { user } = state;
   // const { userInfo } = user;
 
-  const user = { token: false };
+  const user = { token: true, userInfo: { role: 1 } };
+  const { userInfo } = user;
 
   const formatRole = (role: number): string | undefined => {
     switch (role) {
@@ -28,8 +28,7 @@ function Router() {
   };
 
   const handleFilterComponent = (route: any) => {
-    return route.roles.includes(formatRole(1));
-    return true;
+    return route.roles.includes(formatRole(userInfo.role));
   };
   return (
     <BrowserRouter>

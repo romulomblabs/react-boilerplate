@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { getInstance } from "src/utils";
 
 interface LoginData {
-  primaryDocument: string;
+  email: string;
   password: string;
 }
 
