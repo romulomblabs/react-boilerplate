@@ -1,7 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
-
-const backendURL = "http://localhost:5000";
+import { getInstance } from "src/utils";
 
 interface LoginData {
   primaryDocument: string;
@@ -13,7 +11,8 @@ export const auth = createAsyncThunk(
   async (credentials: LoginData, thunkAPI) => {
     const { rejectWithValue } = thunkAPI;
     try {
-      const response = await axios.post(`${backendURL}/auth`, credentials);
+      const instance = getInstance();
+      const response = await instance.post("/auth", credentials);
       return response;
     } catch (error) {
       return rejectWithValue(error);

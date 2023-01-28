@@ -1,6 +1,5 @@
 import Axios, { AxiosInstance } from "axios";
-
-import { Constants } from "~/config";
+import { Constants } from "src/config";
 
 const axiosInstance = Axios.create({
   baseURL: Constants.backUrl,

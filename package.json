@@ -31,7 +31,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts  start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -71,6 +71,7 @@
     "eslint-plugin-simple-import-sort": "^9.0.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.1.0",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.3",
+    "tsconfig-paths": "^4.1.2"
   }
 }

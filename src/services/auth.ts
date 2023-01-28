@@ -1,4 +1,4 @@
-import { getInstance } from "~/utils";
+import { getInstance } from "src/utils";
 
 const baseUrl = "/auth";
 

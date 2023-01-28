@@ -2,12 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "~/*": [
+      "src/*": [
         "src/*"
       ],
-      "test-utils": [
-        "test-utils"
-      ]
     },
     "types": [
       "node",
@@ -33,9 +30,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ],
   "exclude": [
     "node_modules"
   ]
