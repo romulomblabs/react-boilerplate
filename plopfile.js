@@ -32,6 +32,16 @@ module.exports = function (plop) {
         path: "src/components/{{type}}s/{{pascalCase name}}/{{pascalCase name}}.module.css",
         templateFile: "plop-templates/styles.css.hbs",
       },
+      {
+        type: "add",
+        path: "src/components/{{type}}s/{{pascalCase name}}/__test__/{{pascalCase name}}.test.tsx",
+        templateFile: "plop-templates/test.tsx.hbs",
+      },
+      {
+        type: "add",
+        path: "src/components/{{type}}s/{{pascalCase name}}/index.ts",
+        templateFile: "plop-templates/index.ts.hbs",
+      },
     ],
   });
 };

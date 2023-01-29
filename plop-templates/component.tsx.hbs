@@ -1,11 +1,12 @@
-import React from 'react';
-import styles from './{{pascalCase name}}.module.scss';
+import React from "react";
+
+import styles from "./{{pascalCase name}}.module.scss";
 
 interface {{pascalCase name}}Props {
   // declare any props here
 }
 
-const {{pascalCase name}}: React.FC<Props> = (props: {{pascalCase name}}Props) => {
+const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = (props) => {
   return (
     <div className={styles.container}>
       {{pascalCase name}} component
