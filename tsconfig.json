@@ -30,9 +30,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "**/*.ts"
-  ],
   "exclude": [
     "node_modules"
   ]
