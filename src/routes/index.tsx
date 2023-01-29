@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable consistent-return */
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import NotFound from "src/pages/Error/not-found/NotFound";
@@ -7,10 +8,6 @@ import Login from "src/pages/Login/LoginForm";
 import routeList from "./routeList";
 
 function Router() {
-  // const state: any = useSelector((state) => state);
-  // const { user } = state;
-  // const { userInfo } = user;
-
   const user = { token: true, userInfo: { role: 1 } };
   const { userInfo } = user;
 

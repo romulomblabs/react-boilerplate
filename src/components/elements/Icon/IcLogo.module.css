@@ -1,0 +1,23 @@
+.IcLogo {
+}
+
+.small {
+  max-width: 4.4375rem;
+  height: 2.7581rem;
+  width: 100%;
+}
+.medium {
+  max-width: 4.75rem;
+  height: 2.9519rem;
+  width: 100%;
+}
+.large {
+  max-width: 9.375rem;
+  height: 5.8156rem;
+  width: 100%;
+}
+.extraLarge {
+  max-width: 11.25rem;
+  height: 6.9919rem;
+  width: 100%;
+}

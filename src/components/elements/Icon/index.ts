@@ -1,1 +1,1 @@
-export {};
+export { default as IcLogo } from "./IcLogo";
