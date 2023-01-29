@@ -1,8 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Button, Col, Form, Image, Row, Typography } from "antd";
-import { auth } from "src/store/auth/authActions";
 import { useAppDispatch, useAppSelector } from "src/store/hooks";
+import { auth } from "src/store/slices/auth/authAsyncActions";
 
 import styles from "./Login.module.css";
 const { Title } = Typography;

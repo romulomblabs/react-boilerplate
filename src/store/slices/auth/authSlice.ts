@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import { auth } from "./authActions";
+import { auth } from "./authAsyncActions";
 
 interface LoginState {
   loading: boolean;

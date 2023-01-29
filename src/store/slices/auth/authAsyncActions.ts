@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { getInstance } from "src/utils";
+import { authApi } from "src/services";
 
 interface LoginData {
   email: string;
@@ -11,9 +11,9 @@ export const auth = createAsyncThunk(
   "auth/auth",
   async (credentials: LoginData, thunkAPI) => {
     const { rejectWithValue } = thunkAPI;
+    const { email, password } = credentials;
     try {
-      const instance = getInstance();
-      const response = await instance.post("/auth", credentials);
+      const response = await authApi.login(email, password);
       return response;
     } catch (error) {
       return rejectWithValue(error);
