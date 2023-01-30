@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable consistent-return */
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import NotFound from "src/pages/Error/not-found/NotFound";
 import LayoutPage from "src/pages/Layout";
 import Login from "src/pages/Login/LoginForm";
@@ -11,7 +11,7 @@ function Router() {
   const user = { token: true, userInfo: { role: 1 } };
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
         {/* <Route path="/forget" element={<Forget />} /> */}
@@ -33,7 +33,7 @@ function Router() {
           <Route path="*" element={<Navigate to="/login" replace={true} />} />
         )}
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
