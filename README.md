@@ -5,6 +5,7 @@ This project uses lot of stuff as:
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://nextjs.org/)
 - [ReactRouter](https://reactrouter.com)
+- [Redux Toolkit](https://redux-toolkit.js.org)
 - [Ant Design](https://ant.design/)
 - [Jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
